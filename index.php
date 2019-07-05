@@ -11,8 +11,8 @@
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
   
-  <link rel="stylesheet" href="css/html5boilerplate/normalize.css">
-  <link rel="stylesheet" href="css/html5boilerplate/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles.css">
   <!--  <link rel="stylesheet" media="screen and (min-width:1366px)" href="css/1366.css">-->
   
