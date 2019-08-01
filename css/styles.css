@@ -1,3 +1,5 @@
 @import url('fonts.css');
-@import url('default.css') only screen;
+@import url('normalize.css');
+@import url('h5bp.css');
+@import url('common.css');
 @import url('423px.css') only screen and (max-width:423px);
