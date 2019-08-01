@@ -1,11 +1,23 @@
 /* Global elements */
 h1 {
   font-size:2rem;
-  line-spacing:2rem;
 }
 h2 {
   font-size:1.5rem;
-  line-spacing:1.5rem;
+}
+/* Header */
+nav ul {
+  background-color:transparent;
+}
+nav ul li {
+  display:block;
+  background-color:#000;
+}
+nav a {
+  font-size:1.4rem;
+}
+nav .icon {
+  display:block;
 }
 /* Projects */
 #projects {

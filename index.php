@@ -11,16 +11,13 @@
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
   
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/styles.css">
-  <!--  <link rel="stylesheet" media="screen and (min-width:1366px)" href="css/1366.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 <body>
 
 <header id="welcome">
-
   <nav>
     <ul>
       <li><a href="#welcome">WELCOME</a></li>
@@ -28,6 +25,7 @@
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#skills">SKILLS</a></li>
       <li><a href="#contact">CONTACT</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
     </ul>
   </nav>
   

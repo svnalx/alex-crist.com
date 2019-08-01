@@ -1,20 +1,22 @@
 <?php
 function makeSkills() {
     $skillLogos = array(
+    "Visual Studio Code" => "code.svg",  
     "HTML 5" => "html5.svg",
     "CSS 3" => "css3.svg",
     "PHP 7" => "php7.png",
     "JavaScript" => "javascript.svg",
     "jQuery" => "jquery.svg",
     "MySQL" => "mysql.svg",
+    "Illustrator" => "illustrator.svg",
+    "Photoshop" => "photoshop.svg",
     "Bootstrap" => "bootstrap.svg",
     "Wordpress" => "wordpress.png",
     "CodeIgniter" => "codeigniter.svg",            
     "Apache" => "apache.png",            
-    "Brackets" => "brackets.svg",
     "Composer" => "composer.svg",
-    "Illustrator" => "illustrator.svg",
-    "Photoshop" => "photoshop.svg"
+    "Github" => "github.svg",
+    "AutoHotKey" => "ahk.svg"
     );
 
     $baseURL = 'img/icons/';
