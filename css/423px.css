@@ -19,6 +19,12 @@ nav a {
 nav .icon {
   display:block;
 }
+nav.responsive ul li a {
+  display:none;
+}
+nav.responsive ul li a.icon {
+  display:block;
+}
 /* Projects */
 #projects {
   padding:1rem 5vw 1rem 5vw;
