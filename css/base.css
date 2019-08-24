@@ -1,0 +1,267 @@
+/* Global elements */
+html {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+h1 {
+  font-family:"Courier Prime", "Courier New", serif;
+  font-size:2rem;
+  margin-top:0;
+}
+h2 {
+  font-family:"Courier Prime", "Courier New", serif;
+  font-size:1.5rem;
+  text-align:center;
+  margin-top:0;
+  color:#fff;
+}
+p {
+  color:#666;
+}
+ul {
+  margin:0;
+}
+.body-text-link {
+  color:#0a77be;
+  text-decoration:none;
+  font-weight:bold;
+}
+.btn {
+  background-color:transparent;
+  border-radius:6px;
+  padding:0 1rem 0 0;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.btn-white {
+  border:2px solid #fff;
+  color:#fff;
+}
+.btn-blue {
+  border:2px solid #1f7fbe;
+  color:#1f7fbe;
+}
+.btn img {
+  height:2.5rem;
+  padding:0 1rem 0 0;
+}
+.btn-container-1 {
+  display:flex;
+    flex-flow:row wrap;
+    align-items:flex-end;
+    align-content:center;
+    justify-content:flex-end;
+}
+.blue {
+  color:#1f7fbe;
+}
+/* Header */
+#welcome {
+  background-color:#5d5a55;
+  min-height:95vh;
+  padding-bottom:5vh;
+}
+nav {
+  text-align:right;
+}
+nav ul {
+  position:fixed;
+  top:0;
+  right:0;
+  width:100%;
+  z-index:99;
+  background-color:transparent;
+  padding:0;
+  list-style:none;
+  overflow:hidden;
+}
+nav ul li {
+  display:block;
+  padding:0rem 2.5rem;
+  text-decoration:none;
+  background-color:#5BC282;
+}
+nav a {
+  color:#fff;
+  font-size:1.4rem;
+  font-weight:bold;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+nav a:hover {
+  border-bottom:2px solid #fff;
+  position:relative;
+  top:2px;
+}
+nav .icon {
+  display:block;
+}
+nav.responsive ul li a {
+  display:none;
+}
+nav.responsive ul li a.icon {
+  display:block;
+}
+#greeting {
+  display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+  position:relative;
+    top:30vh;
+    width:100%;
+    height:69vh;
+}
+#hi-im-alex {
+  flex:0 1 auto;
+  font:italic 2rem "Segoe UI", Verdana, sans-serif;
+  color:#222;
+}
+#one-liner {
+  flex:0 1 100%;
+  font:1.25rem/1.5rem "Courier Prime", "Courier New", serif;
+  padding-top:30px;
+  text-align:center;
+  color:#222;
+}
+#hand-coded {
+  color:#fff;
+  flex:0 1 100%;
+  align-self:flex-end;
+  font-size:1rem;
+  line-height:1.5rem;
+  font-style:italic;
+  padding-top:30px;
+  text-align:center;
+}
+#greeting a.btn {
+  position:relative;
+  top:30px;
+}
+/* Projects */
+section#projects:target::before {
+  content:"";
+  display:block;
+  height:170px;
+}
+#projects {
+  background-color:#e9eaf0;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  padding:1rem 5vw 1rem 5vw;
+}    
+#projects ul {
+  list-style:none;
+  padding:0;
+  width:300px;
+}
+#projects ul li {
+  display:inline-block;
+  background-color:#fff;
+  margin:0rem 0rem 1.75rem 0rem;
+  width:300px;
+  height:550px;
+  padding-bottom:0rem;
+  box-shadow:
+  0 3px 4px -3px rgba(0, 0, 0, 0.2), 
+  0 3px 4px rgba(0, 0, 0, 0.1), 
+  0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#projects ul li span {
+  display:inline-block;
+  width:100%;
+  text-align:left;
+  font:500 1rem/1rem "Segoe UI", Verdana, sans-serif;
+  padding:0.5rem 0;
+}
+#project-info {
+  padding:0 0.75rem;
+}
+#project-info p {
+  font-size:0.9rem;
+  line-height:1.2rem;
+  text-align:justify;
+  height:120px;
+}
+/* About */
+section#about:target::before {
+  content:"";
+  display:block;
+  height:170px;
+}
+#about {
+  height:auto;
+  padding:1rem 5vw 1rem 5vw;
+}
+#about p {
+  text-align:justify;
+}
+#about-left {
+  display:flex;
+    flex-flow:row wrap;
+    align-items:center;
+    align-content:center;
+    justify-content:flex-start;
+    width:90vw;
+}
+/* Skills */
+#skills {
+  background-color:#e9eaf0;
+  padding:1rem 5vw 1rem 5vw;
+}
+#skills ul {
+  list-style:none;
+  padding:0;
+}
+#skills ul li {
+  display:inline-block;
+  background-color:#fff;
+  margin:0 1.25rem 1.25rem 0;
+  width:90px;
+  padding-bottom:0rem;
+  box-shadow:
+  0 3px 4px -3px rgba(0, 0, 0, 0.2), 
+  0 3px 4px rgba(0, 0, 0, 0.1), 
+  0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#skills ul li span {
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  font:500 0.9rem/1rem "Segoe UI", Verdana, sans-serif;
+  padding:0.5rem 0;
+}
+#skills ul li img {
+  width:90px;
+}
+/* Footer */
+#contact {
+  background-color:#1f7fbe;
+  text-align:center;
+  padding:2rem 0;
+}
+#contact ul {
+  list-style:none;
+  padding:0;
+}
+#contact ul li {
+  display:inline-block;
+  margin:2vw;
+}
+#contact ul li span {
+  text-decoration:none;
+  color:#222;
+  font-size:1.25rem;
+  width:15vw;
+  margin:0;
+  padding:0;
+}
+#contact ul li img {
+  width:15vw;
+}
+#contact p {
+  font-size:1.4rem;
+  color:#fff;
+}

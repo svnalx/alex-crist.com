@@ -1,0 +1,73 @@
+/* Global elements */
+h1 {
+  font-size:2.5rem;
+}
+h2 {
+  font-size:1.5rem;
+}
+/* Header */
+nav ul {
+  background-color:#222;
+  padding:0.5rem 0;
+}
+nav ul li {
+  display:inline;
+}
+nav a {
+  font-size:0.9rem;
+}
+nav .icon {
+  display:none;
+}
+#one-liner {
+  padding-top:50px;
+}
+#hand-coded {
+  font-size:1.25rem;
+  padding-top:50px;
+}
+#greeting a.btn {
+  top:50px;
+}
+/* Projects */
+section#projects:target::before {
+  height:0;
+}
+#projects {
+  padding:3rem 15vw 2rem 15vw;
+}
+#projects ul li {
+  margin:0rem 0.75rem 0.75rem 0rem;
+}
+/* About */
+section#about:target::before {
+  height:0;
+}
+#about {
+  padding:3rem 15vw 2rem 15vw;
+}
+#about-left {
+  width:25vw;
+}
+/* Skills */
+#skills {
+  padding:3rem 15vw 2rem 15vw;
+} 
+#skills ul li {
+  margin:0rem 1.75rem 1.75rem 0rem;
+  width:120px;
+}
+/* Footer */
+#contact {
+  padding:2rem 15vw 2rem 15vw;
+}
+#contact ul li {
+  margin:0 1rem;
+}
+#contact ul li span {
+  font-size:1rem;
+  padding:0.5rem;
+}
+#contact ul li img {
+  width:35px;
+}
