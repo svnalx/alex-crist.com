@@ -27,18 +27,15 @@ ul {
 .btn {
   background-color:transparent;
   border-radius:7px;
-  padding:0.25rem 1rem 0.25rem 0;
+  padding:0 1rem 0 0;
   text-decoration:none;
   text-transform:uppercase;
   color:#fff;
 }
-.btn-blue {
-  border:2px solid #1f7fbe;
-  color:#1f7fbe;
-}
 .btn img {
   height:2.5rem;
   padding:0;
+  padding-right:1rem;
 }
 .btn-container-1 {
   display:flex;
@@ -47,20 +44,19 @@ ul {
     align-content:center;
     justify-content:flex-end;
 }
-/* Header */
-#welcome {
-  background-color:#010829;
-  background-image:url("../img/earth-sunrise-vertical.jpg");
-  background-size:cover;
-  background-position:center;
-  min-height:95vh;
-  padding-bottom:5vh;
+.btn-container-1 .btn {
+  border:2px solid #ac6b36;
+  color:#ac6b36;
 }
+/* Nav */
 nav {
   background-color:#010829;
   text-align:right;
   display:flex;
   flex-flow:row nowrap;
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 nav #social {
   flex:1;
@@ -108,10 +104,13 @@ nav #menu a {
   text-decoration:none;
   text-transform:uppercase;
 }
-nav #menu a:hover {
-}
 nav #menu .icon {
   display:block;
+}
+nav.expanded #menu {
+  position:absolute;
+  top:0;
+  right:0;
 }
 nav.expanded #menu li {
   display:block;
@@ -121,6 +120,15 @@ nav.expanded #menu li a {
 }
 nav.expanded #menu li a.icon {
   display:block;
+}
+/* Hero */
+#hero {
+  background-color:#010829;
+  background-image:url("../img/earth-sunrise-vertical.jpg");
+  background-size:cover;
+  background-position:center;
+  min-height:95vh;
+  padding-bottom:5vh;
 }
 #hero-area {
   display:flex;
@@ -195,16 +203,19 @@ nav.expanded #menu li a.icon {
 section#projects:target::before {
   content:"";
   display:block;
-  height:170px;
+  height:50px;
 }
 #projects {
-  background-color:#e9eaf0;
+  background-color:#f3f4f6;
   display:flex;
   flex-flow:column wrap;
   justify-content:center;
   align-items:center;
   padding:1rem 5vw 1rem 5vw;
 }    
+#projects h1 {
+  align-self:flex-start;
+}
 #projects ul {
   list-style:none;
   padding:0;
@@ -215,12 +226,12 @@ section#projects:target::before {
   background-color:#fff;
   margin:0rem 0rem 1.75rem 0rem;
   width:300px;
-  height:550px;
+  height:515px;
   padding-bottom:0rem;
   box-shadow:
-  0 3px 4px -3px rgba(0, 0, 0, 0.2), 
-  0 3px 4px rgba(0, 0, 0, 0.1), 
-  0 2px 4px rgba(0, 0, 0, 0.1);
+  0 3px 4px -3px rgba(1, 8, 41, 0.2), 
+  0 3px 4px rgba(1, 8, 41, 0.1), 
+  0 2px 4px rgba(1, 8, 41, 0.1);
 }
 #projects ul li span {
   display:inline-block;
@@ -234,19 +245,23 @@ section#projects:target::before {
 }
 #project-info p {
   font-size:0.9rem;
-  line-height:1.2rem;
+  line-height:1.1rem;
   text-align:justify;
-  height:120px;
+  height:100px;
+  margin-top:0;
 }
 /* About */
 section#about:target::before {
   content:"";
   display:block;
-  height:170px;
+  height:50px;
 }
 #about {
   height:auto;
   padding:1rem 5vw 1rem 5vw;
+}
+#about h1 {
+  align-self:flex-start;
 }
 #about p {
   text-align:justify;
@@ -261,9 +276,21 @@ section#about:target::before {
     width:90vw;
 }
 /* Skills */
+section#skills:target::before {
+  content:"";
+  display:block;
+  height:50px;
+}
 #skills {
   background-color:#e9eaf0;
   padding:1rem 5vw 1rem 5vw;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+}
+#skills h1 {
+  align-self:flex-start;
 }
 #skills ul {
   list-style:none;
@@ -272,7 +299,7 @@ section#about:target::before {
 #skills ul li {
   display:inline-block;
   background-color:#fff;
-  margin:0 1.25rem 1.25rem 0;
+  margin:0 3vw 5vw 0;
   width:90px;
   padding-bottom:0rem;
   box-shadow:

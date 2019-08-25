@@ -17,21 +17,24 @@
 </head>
 <body>
 
-<header id="welcome">
-  <nav class="topnav" id="top-nav">
-    <ul id="social">
-      <?php makeSocial(); ?>
-    </ul>
-    <ul id="menu">
-      <li><a href="#welcome">WELCOME</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-      <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i class="fa fa-bars"></i></a></li>
-    </ul>
-  </nav>
-  
+<nav class="topnav" id="top-nav">
+
+  <ul id="social">
+    <?php makeSocial(); ?>
+  </ul>
+  <ul id="menu">
+    <li><a href="#hero">BEGIN</a></li>
+    <li><a href="#projects">PROJECTS</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i class="fa fa-bars"></i></a></li>
+  </ul>
+
+</nav>
+
+<section id="hero">
+
   <div id="hero-area">
     <div id="hero-area-row-1">
       <span id="alex">Alex<br><span id="crist">CRIST</span></span>
@@ -44,8 +47,8 @@
       <span id="hand-coded">This website is hand-coded in plain HTML, CSS, PHP, and JavaScript with focus on responsive design and cross-browser compatibility.</span>
     </div>
   </div>
-  
-</header>
+
+</section>
 
 <section id="projects">
 
@@ -57,7 +60,7 @@
 <section id="about">
 
   <div id="about-left">
-    <h1>About me</h1>
+    <h1>This is my story</h1>
     <p>Hi, I’m Alex and you have arrived at my web development portfolio. Here, you can see samples of my capabilities. I plan to grow this site as my skills grow. <a class="body-text-link" href="#contact">Also, I’m available to hire!</a> I’m eager to meet you. </p>
     <p>I chose to become a developer so that I can build things that make peoples’ lives better while also building my dream career. My enthusiasm for programming started early - I was writing games on my graphing calculator in middle school. Now I am looking to put my knowledge and experience to working creating beautiful, usable websites using industry best practices.</p>
   </div>

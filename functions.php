@@ -76,7 +76,7 @@ function makeProjects() {
           <span>' .  $label .  '</span>' . '
           <p>' . $projectInfo[$label] . '</p>' . '
             <div class="btn-container-1">' . '
-            <a class="btn btn-blue" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
+            <a class="btn" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
           </div>' . '
         </div>' . '
       </li>';
