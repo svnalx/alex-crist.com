@@ -29,11 +29,17 @@
     </ul>
   </nav>
   
-  <div id="greeting">
-    <span id="hi-im-alex">Hi, I'm Alex.</span>
-    <span id="one-liner">UI/UX Designer<br>Front-End Developer<br>from Arlington, Texas.</span>
-    <a class="btn btn-white" href="resume.pdf"><img src="img/download-icon.svg" alt="download icon">DOWNLOAD RESUME</a>
-    <span id="hand-coded">This website is hand-coded in plain HTML, CSS, PHP, and JavaScript with focus on responsive design and cross-browser compatibility.</span>
+  <div id="hero-area">
+    <div id="hero-area-row-1">
+      <span id="alex">Alex<br><span id="crist">CRIST</span></span>
+      <a class="btn" href="resume.pdf">Download my resume</a>
+    </div>
+    <div id="hero-area-row-2">
+      <span id="fedev">Front-End Developer<br><span id="one-liner">I create purpose-built websites for actualizing dreams.</span> 
+    </div> 
+    <div id="hero-area-row-3">
+      <span id="hand-coded">This website is hand-coded in plain HTML, CSS, PHP, and JavaScript with focus on responsive design and cross-browser compatibility.</span>
+    </div>
   </div>
   
 </header>

@@ -6,6 +6,12 @@ h2 {
   font-size:1.5rem;
 }
 /* Header */
+#welcome {
+  background-color:navy;
+  background-image:url("../img/earth-sunrise.jpg");
+  background-size:cover;
+  background-position:center;
+}
 nav ul {
   background-color:#222;
   padding:0.5rem 0;

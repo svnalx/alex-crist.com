@@ -3,3 +3,6 @@
 @import url('h5bp.css');
 @import url('base.css');
 @import url('1600px.css') only screen and (min-width:1600px);
+
+/* Debug 
+* { border:dotted 1px red; }*/
