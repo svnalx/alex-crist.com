@@ -4,12 +4,12 @@ html {
   color:#5d5a55;
 }
 h1 {
-  font-family:"Courier Prime", "Courier New", serif;
+  font-family:"Abeezee", sans-serif;
   font-size:2rem;
   margin-top:0;
 }
 h2 {
-  font-family:"Courier Prime", "Courier New", serif;
+  font-family:"Abeezee", sans-serif;
   font-size:1.5rem;
   text-align:center;
   margin-top:0;
@@ -19,9 +19,10 @@ ul {
   margin:0;
 }
 .body-text-link {
-  color:#0a77be;
+  color:#ac6b36;
   text-decoration:none;
   font-weight:bold;
+  border-bottom:1px solid #ac6b36;
 }
 .btn {
   background-color:transparent;
@@ -46,12 +47,9 @@ ul {
     align-content:center;
     justify-content:flex-end;
 }
-.blue {
-  color:#1f7fbe;
-}
 /* Header */
 #welcome {
-  background-color:navy;
+  background-color:#010829;
   background-image:url("../img/earth-sunrise-vertical.jpg");
   background-size:cover;
   background-position:center;
@@ -59,44 +57,69 @@ ul {
   padding-bottom:5vh;
 }
 nav {
+  background-color:#010829;
   text-align:right;
+  display:flex;
+  flex-flow:row nowrap;
 }
-nav ul {
-  position:fixed;
-  top:0;
-  right:0;
-  width:100%;
-  z-index:99;
-  background-color:transparent;
+nav #social {
+  flex:1;
+  list-style:none;
+  padding:0;
+  float:left;
+}
+nav #social li {
+  display:inline-block;
+  margin:2vw;
+}
+nav #social li span {
+  text-decoration:none;
+  color:#fff;
+  font-size:1.25rem;
+  width:2vw;
+  margin:0;
+  padding:0;
+}
+nav #social li img {
+  width:8vw;
+}
+nav #menu {
+  flex:1;
+  background-color:#010829;
   padding:0;
   list-style:none;
   overflow:hidden;
 }
-nav ul li {
-  display:block;
-  padding:0rem 2.5rem;
+nav #menu li {
+  display:none;
+  padding:0.5rem;
   text-decoration:none;
-  background-color:#010829;
 }
-nav a {
+nav #menu li:last-child {
+  display:block;
+}
+i.fa-bars {
+  font-size:2.25rem;
+}
+nav #menu a {
   color:#fff;
-  font-size:1.4rem;
+  font-size:1.2rem;
   font-weight:bold;
   text-decoration:none;
   text-transform:uppercase;
 }
-nav a:hover {
-  border-bottom:2px solid #fff;
-  position:relative;
-  top:2px;
+nav #menu a:hover {
 }
-nav .icon {
+nav #menu .icon {
   display:block;
 }
-nav.responsive ul li a {
-  display:none;
+nav.expanded #menu li {
+  display:block;
 }
-nav.responsive ul li a.icon {
+nav.expanded #menu li a {
+  display:block;
+}
+nav.expanded #menu li a.icon {
   display:block;
 }
 #hero-area {
@@ -227,6 +250,7 @@ section#about:target::before {
 }
 #about p {
   text-align:justify;
+  text-indent:0.5rem;
 }
 #about-left {
   display:flex;
@@ -268,28 +292,9 @@ section#about:target::before {
 }
 /* Footer */
 #contact {
-  background-color:#1f7fbe;
+  background-color:#ac6b36;
   text-align:center;
   padding:2rem 0;
-}
-#contact ul {
-  list-style:none;
-  padding:0;
-}
-#contact ul li {
-  display:inline-block;
-  margin:2vw;
-}
-#contact ul li span {
-  text-decoration:none;
-  color:#222;
-  font-size:1.25rem;
-  width:15vw;
-  margin:0;
-  padding:0;
-}
-#contact ul li img {
-  width:15vw;
 }
 #contact p {
   font-size:1.4rem;

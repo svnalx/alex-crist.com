@@ -103,7 +103,7 @@ function makeSocial() {
     {
       echo 
       '<li>' . '
-      <a href="' . $socialURLs[$label] . '" target="_blank"><img src="' . $baseURL . $filename . '" alt="Icon for ' .  $label . '" /></a><br><span>' . $label . '</span></li>';
+      <a href="' . $socialURLs[$label] . '" target="_blank"><img src="' . $baseURL . $filename . '" alt="Icon for ' .  $label . '" /></a></li>';
     }
 }
 ?> 
