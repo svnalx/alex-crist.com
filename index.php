@@ -23,12 +23,12 @@
     <?php makeSocial(); ?>
   </ul>
   <ul id="menu">
+    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i class="fa fa-bars"></i></a></li>
     <li><a href="#hero">BEGIN</a></li>
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#skills">SKILLS</a></li>
     <li><a href="#contact">CONTACT</a></li>
-    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i class="fa fa-bars"></i></a></li>
   </ul>
 
 </nav>
@@ -41,7 +41,7 @@
       <a class="btn" href="resume.pdf">Download my resume</a>
     </div>
     <div id="hero-area-row-2">
-      <span id="fedev">Front-End Developer<br><span id="one-liner">I create purpose-built websites for actualizing dreams.</span> 
+      <span id="fedev">Front-End Developer<br><span id="one-liner">I create purpose-built websites.</span> 
     </div> 
     <div id="hero-area-row-3">
       <span id="hand-coded">This website is hand-coded in plain HTML, CSS, PHP, and JavaScript with focus on responsive design and cross-browser compatibility.</span>
@@ -78,9 +78,17 @@
 
 </section>
 
-<footer id="contact">
+<footer id="footer">
 
-  <a class="btn btn-white" href="mailto:alex@alex-crist.com"><img src="img/email-btn-icon.svg" alt="email icon">SEND A MESSAGE</a>
+  <br><h2>Contact me</h2>
+  
+  <form id="contact" action="cgi-bin/email.pl" method="post">
+    <input type="text" name="name" placeholder="Your name"><br>
+    <input type="email" name="email" placeholder="Your email"><br>
+    <textarea name="message" rows="10" placeholder="Message..."></textarea><br>
+    <input type="submit" value="Send it">
+  </form>
+
 
 <?php require_once('roll-credits.php'); ?>
 
