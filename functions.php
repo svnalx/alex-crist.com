@@ -17,9 +17,11 @@ function makeSkills() {
     "Apache" => "apache.png",            
     "Composer" => "composer.svg",
     "Github" => "github.svg",
-    "AutoHotKey" => "ahk.svg",
-    "Sass" => "sass.svg",
-    "npm" => "npm.svg"
+    "AutoHotKey" => "ahk.svg"
+    //"Sass" => "sass.svg",
+    //"npm" => "npm.svg",
+    //"Grunt" => "grunt.svg",
+    //"Gulp" => "gulp.svg"
     );
 
     $baseURL = 'img/icons/';

@@ -13,6 +13,7 @@ h2 {
   font-size:1.5rem;
   text-align:center;
   margin-top:0;
+  color:#e9eaf0;
 }
 ul {
   margin:0;
@@ -46,9 +47,6 @@ ul {
 .btn-container-1 .btn {
   border:2px solid #ac6b36;
   color:#ac6b36;
-  -webkit-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
-  -moz-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
-  box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
 }
 /* Nav */
 nav {
@@ -236,9 +234,6 @@ section#projects:target::before {
   list-style:none;
   padding:0;
   width:300px;
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:space-around;
 }
 #projects ul li {
   display:inline-block;

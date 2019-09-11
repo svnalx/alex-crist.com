@@ -2,7 +2,8 @@
 @import url('normalize.css');
 @import url('h5bp.css');
 @import url('base.css');
-@import url('1600px.css') only screen and (min-width:1600px);
+@import url('630px') only screen and (min-width:630px);
+@import url('1600px.css') only screen and (min-width:6600px);
 
 /* Debug 
 * { border:dotted 1px red; }*/

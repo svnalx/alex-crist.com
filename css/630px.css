@@ -1,0 +1,20 @@
+
+
+
+/* Projects */
+#projects {
+    padding:0;
+}
+#projects h1 {
+    padding-left:5vw;
+  }
+#projects ul {
+    width:625px;
+}
+#projects ul li {
+    margin:0 0 1.75rem 0;
+}
+/* Footer */
+#contact input, #contact textarea {
+    width:425px;
+  }

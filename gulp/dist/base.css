@@ -13,6 +13,7 @@ h2 {
   font-size:1.5rem;
   text-align:center;
   margin-top:0;
+  color:#e9eaf0;
 }
 ul {
   margin:0;
@@ -37,30 +38,45 @@ ul {
   padding-right:1rem;
 }
 .btn-container-1 {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
     flex-flow:row wrap;
+    -webkit-box-align:end;
+    -ms-flex-align:end;
     align-items:flex-end;
+    -ms-flex-line-pack:center;
     align-content:center;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
     justify-content:flex-end;
 }
 .btn-container-1 .btn {
   border:2px solid #ac6b36;
   color:#ac6b36;
-  -webkit-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
-  -moz-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
-  box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
 }
 /* Nav */
 nav {
   background-color:#00020c;
   text-align:right;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -ms-flex-flow:row nowrap;
   flex-flow:row nowrap;
+  position:-webkit-sticky;
   position:sticky;
   top:0;
   z-index:100;
 }
 nav #social {
+  -webkit-box-flex:4;
+  -ms-flex:4;
   flex:4;
   list-style:none;
   padding:3px;
@@ -87,6 +103,8 @@ nav #social li img {
   width:35px;
 }
 nav #menu {
+  -webkit-box-flex:1;
+  -ms-flex:1;
   flex:1;
   padding:0;
   list-style:none;
@@ -147,10 +165,20 @@ nav.expanded #menu li a.icon {
   padding-bottom:5vh;
 }
 #hero-area {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
     flex-flow:row wrap;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
     align-items:center;
+    -ms-flex-line-pack:justify;
     align-content:space-between;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
     justify-content:center;
   position:relative;
     top:30vh;
@@ -159,19 +187,32 @@ nav.expanded #menu li a.icon {
 }
 #hero-area-row-1 {
   width:96vw;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row nowrap;
     flex-flow:row nowrap;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
     align-items:center;
+    -ms-flex-line-pack:end;
     align-content:flex-end;
+    -ms-flex-pack:distribute;
     justify-content:space-around;
 }
 #alex {
+  -webkit-box-flex:0;
+  -ms-flex:0 1 auto;
   flex:0 1 auto;
   font:3.25rem "Abeezee", Verdana, sans-serif;
   color:#e9eaf0;
   line-height:2.25rem;
 }
 #crist {
+  -webkit-box-flex:0;
+  -ms-flex:0 1 auto;
   flex:0 1 auto;
   font:2.5rem "Abeezee", Verdana, sans-serif;
   color:#e9eaf0;
@@ -179,7 +220,6 @@ nav.expanded #menu li a.icon {
 #hero-area-row-1 .btn {
   background-color:#ac6b36;
   -webkit-box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
-  -moz-box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
   box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
   padding:0.5rem 0.75rem;
 }
@@ -209,7 +249,10 @@ nav.expanded #menu li a.icon {
 }
 #hand-coded {
   color:#e9eaf0;
+  -webkit-box-flex:0;
+  -ms-flex:0 1 100%;
   flex:0 1 100%;
+  -ms-flex-item-align:end;
   align-self:flex-end;
   font-size:1rem;
   line-height:1.25rem;
@@ -223,22 +266,29 @@ section#projects:target::before {
 }
 #projects {
   background-color:#e9eaf0;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-flow:column wrap;
   flex-flow:column wrap;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
   justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
   align-items:center;
   padding:1rem 5vw 1rem 5vw;
 }    
 #projects h1 {
+  -ms-flex-item-align:start;
   align-self:flex-start;
 }
 #projects ul {
   list-style:none;
   padding:0;
   width:300px;
-  display:flex;
-  flex-flow:row wrap;
-  justify-content:space-around;
 }
 #projects ul li {
   display:inline-block;
@@ -247,6 +297,10 @@ section#projects:target::before {
   width:300px;
   height:515px;
   padding-bottom:0rem;
+  -webkit-box-shadow:
+  0 3px 4px -3px rgba(1, 8, 41, 0.2), 
+  0 3px 4px rgba(1, 8, 41, 0.1), 
+  0 2px 4px rgba(1, 8, 41, 0.1);
   box-shadow:
   0 3px 4px -3px rgba(1, 8, 41, 0.2), 
   0 3px 4px rgba(1, 8, 41, 0.1), 
@@ -281,6 +335,7 @@ section#about:target::before {
   background-color:#e9eaf0;
 }
 #about h1 {
+  -ms-flex-item-align:start;
   align-self:flex-start;
 }
 #about p {
@@ -288,10 +343,20 @@ section#about:target::before {
   text-indent:0.5rem;
 }
 #about-left {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -ms-flex-flow:row wrap;
     flex-flow:row wrap;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
     align-items:center;
+    -ms-flex-line-pack:center;
     align-content:center;
+    -webkit-box-pack:start;
+    -ms-flex-pack:start;
     justify-content:flex-start;
     width:90vw;
 }
@@ -304,12 +369,22 @@ section#skills:target::before {
 #skills {
   background-color:#e9eaf0;
   padding:1rem 5vw 1rem 5vw;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-flow:column wrap;
   flex-flow:column wrap;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
   justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
   align-items:center;
 }
 #skills h1 {
+  -ms-flex-item-align:start;
   align-self:flex-start;
 }
 #skills ul {
@@ -322,6 +397,10 @@ section#skills:target::before {
   margin:0 3vw 5vw 0;
   width:90px;
   padding-bottom:0rem;
+  -webkit-box-shadow:
+  0 3px 4px -3px rgba(0, 0, 0, 0.2), 
+  0 3px 4px rgba(0, 0, 0, 0.1), 
+  0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow:
   0 3px 4px -3px rgba(0, 0, 0, 0.2), 
   0 3px 4px rgba(0, 0, 0, 0.1), 
@@ -357,13 +436,24 @@ section#skills:target::before {
   border:2px solid #ac6b36;
   border-radius:7px;
 }
+::-webkit-input-placeholder {
+  color:#5d5a55;
+}
+::-moz-placeholder {
+  color:#5d5a55;
+}
+:-ms-input-placeholder {
+  color:#5d5a55;
+}
+::-ms-input-placeholder {
+  color:#5d5a55;
+}
 ::placeholder {
   color:#5d5a55;
 }
 #contact .btn {
   background-color:#ac6b36;
   -webkit-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
-  -moz-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
   box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
   padding:0.5rem 0.75rem;
 }

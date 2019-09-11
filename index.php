@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Alex Crist | Front-End Developer</title>
+  <title>Alex Crist | Frontend Developer</title>
   <meta name="author" content="Alex Crist">
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
@@ -38,10 +38,10 @@
   <div id="hero-area">
     <div id="hero-area-row-1">
       <span id="alex">Alex<br><span id="crist">CRIST</span></span>
-      <a class="btn" href="resume.pdf">Download my resume</a>
+      <a class="btn" href="Alex Crist's resume - Frontend Developer.pdf">Download my resume</a>
     </div>
     <div id="hero-area-row-2">
-      <span id="fedev">Front-End Developer<br><span id="one-liner">I create purpose-built websites.</span> 
+      <span id="fedev">Frontend Developer<br><span id="one-liner">with a side of UI/UX Design</span> 
     </div> 
     <div id="hero-area-row-3">
       <span id="hand-coded">This website is hand-coded in plain HTML, CSS, PHP, and JavaScript with focus on responsive design and cross-browser compatibility.</span>
@@ -81,14 +81,8 @@
 <footer id="footer">
 
   <br><h2>Contact me</h2>
-  
-  <form id="contact" action="cgi-bin/email.pl" method="post">
-    <input type="text" name="name" placeholder="Your name"><br>
-    <input type="email" name="email" placeholder="Your email"><br>
-    <textarea name="message" rows="10" placeholder="Message..."></textarea><br>
-    <input type="submit" value="Send it">
-  </form>
 
+  <?php require_once('contact-form.php'); ?>
 
 <?php require_once('roll-credits.php'); ?>
 
