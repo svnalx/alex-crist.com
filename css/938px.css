@@ -1,0 +1,16 @@
+
+/* Nav */
+
+/* Projects */
+#projects ul {
+    width:790px;
+}
+
+/* About */
+#about p {
+    width:35vw;
+}
+#about p:nth-child(4n+1) { order:1; }
+#about p:nth-child(4n+2) { order:3; }
+#about p:nth-child(4n+3) { order:2; }
+#about p:nth-child(4n+4) { order:4; }
