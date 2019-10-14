@@ -41,10 +41,10 @@ function makeSkills() {
 }
 function makeProjects() {
     $projectImages = array(
-    "Allegiance Group Construction" => "allegiance-screenshot.png",
-    "Clearfork Bamboo Rods" => "clearfork-screenshot.png",
-    "Fancy That" => "fancythat-screenshot.png",
-    "Tom Vandergriff Tribute" => "vandergriff.png"
+    "Allegiance Group Construction" => "allegiance-screenshot-faded.png",
+    "Clearfork Bamboo Rods" => "clearfork-screenshot-faded.png",
+    "Fancy That" => "fancythat-screenshot-faded.png",
+    "Tom Vandergriff Tribute" => "vandergriff-faded.png"
     );
     
     $projectInfo = array(

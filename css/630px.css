@@ -1,20 +1,33 @@
 
 
-
+/* Hero */
+#hero-area-row-1 {
+  width:500px;
+}
+#hero-area-row-2 img {
+  max-width:30vw;
+}
+#hero-area-row-3 p {
+  width:500px;
+  padding:0 3rem;
+}
+#hero-area-row-3 img {
+  content:url("../img/divider-arrow-wings.svg");
+}
 /* Projects */
 #projects {
-    padding:0;
+    padding-top:1rem;
 }
-#projects h1 {
-    padding-left:5vw;
-  }
 #projects ul {
-    width:625px;
-}
-#projects ul li {
-    margin:0 0 1.75rem 0;
-}
-/* Footer */
-#contact input, #contact textarea {
-    width:425px;
+    width:630px;
+  }
+/* Skills */
+#skills ul {
+    width:490px;
+  }
+  #skills ul li:nth-child(4n+4) { /* resets margin from base.css */
+    margin-right:10px;
+  }
+  #skills ul li:nth-child(5n+5) {
+    margin-right:0;
   }

@@ -41,12 +41,12 @@
       <a class="btn" href="Alex Crist's resume - Frontend Developer.pdf">My resume</a>
     </div>
     <div id="hero-area-row-2">
-      <span id="title">Frontend Web Developer<br><span id="subtitle">and UI/UX Designer</span> 
-      <img src="img/arrow-down.png">
+      <span id="title">Frontend Web Developer<br><span id="subtitle">and UI/UX Designer</span><br>
+      <img src="img/divider-arrow-thin-sm.svg">
     </div> 
     <div id="hero-area-row-3">
       <p>My portfolio of development and design is hand-coded in plain HTML, CSS, PHP, and JavaScript. It has been built using mobile-first theory and includes a responsive layout. For cross-browser compatibility, I use Autoprefixer via the Gulp task runner.</p>
-      <img src="img/divider-arrow-down.svg">
+      <img src="img/divider-arrow-sans-wings.svg">
     </div>
     
   </div>
@@ -55,17 +55,16 @@
 
 <section id="projects">
 
-  <h1>Explore my work</span></h1>
+  <h1>Explore my work</h1>
   <ul><?php makeProjects(); ?></ul>
 
 </section>
   
 <section id="about">
 
-  <h1>This is my story</h1>
+  <h1>Get to know me</h1>
   <div id="about-text">
     <p>Hi, I’m Alex and you have arrived at my web development portfolio. Here, you can see samples of my capabilities. I plan to grow this site as my skills grow. <a class="body-text-link" href="#contact">Also, I’m available to hire!</a> I’m eager to meet you.</p>
-    <p>p2can see samples of my capabilities. I plan to grow this site as my skills grow</p>
     <p>I chose to become a developer so that I can build things that make peoples’ lives better while also building my dream career. My enthusiasm for programming started early - I was writing games on my graphing calculator in middle school. Now I am looking to put my knowledge and experience to working creating beautiful, usable websites using industry best practices.</p>
     <p></p>
   </div>
@@ -81,7 +80,7 @@
 
 <footer id="footer">
 
-  <br><h2>Contact me</h2>
+  <br><h1>Contact me</h1>
 
   <?php require_once('contact-form.php'); ?>
 
