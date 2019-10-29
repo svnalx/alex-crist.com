@@ -7,21 +7,22 @@ function makeSkills() {
     "JavaScript" => "javascript.svg",
     "jQuery" => "jquery.svg",
     "MySQL" => "mysql.svg",
-    "Visual Studio Code" => "code.svg",  
-    "TechnoTutor" => "tt.svg",
+    "Github" => "github.svg",
     "Illustrator" => "illustrator.svg",
     "Photoshop" => "photoshop.svg",
     "Bootstrap" => "bootstrap.svg",
     "Wordpress" => "wordpress.png",
-    "CodeIgniter" => "codeigniter.svg",            
-    "Apache" => "apache.png",            
+    "CodeIgniter" => "codeigniter.svg",    
+    "Apache" => "apache.png", 
+    "NodeJS" => "nodejs.svg",   
+    "npm" => "npm.svg",        
+    "Visual Studio Code" => "code.svg",          
     "Composer" => "composer.svg",
-    "Github" => "github.svg",
-    "AutoHotKey" => "ahk.svg"
     //"Sass" => "sass.svg",
-    //"npm" => "npm.svg",
     //"Grunt" => "grunt.svg",
-    //"Gulp" => "gulp.svg"
+    "Gulp" => "gulp.svg",
+    //"Slack" => "slack.svg",
+    "AutoHotKey" => "ahk.svg"
     );
 
     $baseURL = 'img/icons/';

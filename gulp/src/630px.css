@@ -11,6 +11,9 @@
   width:500px;
   padding:0 3rem;
 }
+#hero-area-row-3 img {
+  content:url("../img/divider-arrow-wings.svg");
+}
 /* Projects */
 #projects {
     padding-top:1rem;

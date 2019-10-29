@@ -37,7 +37,7 @@
 
   <div id="hero-area">
     <div id="hero-area-row-1">
-      <img src="img/alex-crist.png">
+      <img src="img/alex-crist-badge.png">
       <a class="btn" href="Alex Crist's resume - Frontend Developer.pdf">My resume</a>
     </div>
     <div id="hero-area-row-2">
@@ -46,7 +46,7 @@
     </div> 
     <div id="hero-area-row-3">
       <p>My portfolio of development and design is hand-coded in plain HTML, CSS, PHP, and JavaScript. It has been built using mobile-first theory and includes a responsive layout. For cross-browser compatibility, I use Autoprefixer via the Gulp task runner.</p>
-      <img src="img/divider-arrow-sans-wings.svg">
+      <img src="img/divider-arrow-wings-4000px.svg">
     </div>
     
   </div>
@@ -65,7 +65,7 @@
   <h1>Get to know me</h1>
   <div id="about-text">
     <p>Hi, I’m Alex and you have arrived at my web development portfolio. Here, you can see samples of my capabilities. I plan to grow this site as my skills grow. <a class="body-text-link" href="#contact">Also, I’m available to hire!</a> I’m eager to meet you.</p>
-    <p>I chose to become a developer so that I can build things that make peoples’ lives better while also building my dream career. My enthusiasm for programming started early - I was writing games on my graphing calculator in middle school. Now I am looking to put my knowledge and experience to working creating beautiful, usable websites using industry best practices.</p>
+    <p>I chose to become a developer so that I can build things that make peoples’ lives better while also building my dream career. My enthusiasm for programming started early - I was writing games on my graphing calculator in middle school. Now I am looking to put my knowledge and experience to work creating beautiful, functional websites using industry best practices.</p>
     <p></p>
   </div>
   

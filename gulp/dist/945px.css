@@ -5,6 +5,9 @@
 #hero-area-row-2 img {
   width:200px;
 }
+#hero-area-row-3 img {
+  content:url("../img/divider-arrow-wings-xl.svg");
+}
 /* Projects */
 #projects ul {
     width:630px;

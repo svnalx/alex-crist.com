@@ -1,0 +1,31 @@
+
+
+/* Hero */
+#hero-area-row-2 img {
+  width:200px;
+}
+/* Projects */
+#projects ul {
+  width:416px;
+}
+#projects ul li {
+  margin:0 0 1.75rem 0;
+}
+/* About */
+#about-text {
+  width:390px;
+}
+/* Skills */
+#skills ul {
+  width:390px;
+}
+#skills ul li:nth-child(3n+3) { /* resets margin from base.css */
+  margin-right:10px;
+}
+#skills ul li:nth-child(4n+4) {
+  margin-right:0;
+}
+/* Footer */
+#contact input, #contact textarea {
+  width:320px;
+}

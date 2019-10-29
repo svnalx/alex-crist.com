@@ -1,11 +1,10 @@
-
 /* Nav */
 
 /* Hero */
 #hero-area-row-2 img {
   width:200px;
 }
-/* Projects */
-#projects ul {
-    width:630px;
-  }
+/* About */
+#about-text {
+  width:500px;
+}
