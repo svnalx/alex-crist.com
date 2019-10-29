@@ -11,7 +11,7 @@
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
   
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
@@ -37,16 +37,16 @@
 
   <div id="hero-area">
     <div id="hero-area-row-1">
-      <img src="img/alex-crist-badge.png">
+      <img src="app/img/alex-crist-badge.png">
       <a class="btn" href="Alex Crist's resume - Frontend Developer.pdf">My resume</a>
     </div>
     <div id="hero-area-row-2">
       <span id="title">Frontend Web Developer<br><span id="subtitle">and UI/UX Designer</span><br>
-      <img src="img/divider-arrow-thin-sm.svg">
+      <img src="app/img/divider-arrow-thin-sm.svg">
     </div> 
     <div id="hero-area-row-3">
       <p>My portfolio of development and design is hand-coded in plain HTML, CSS, PHP, and JavaScript. It has been built using mobile-first theory and includes a responsive layout. For cross-browser compatibility, I use Autoprefixer via the Gulp task runner.</p>
-      <img src="img/divider-arrow-wings-4000px.svg">
+      <img src="app/img/divider-arrow-wings-4000px.svg">
     </div>
     
   </div>

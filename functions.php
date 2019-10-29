@@ -25,7 +25,7 @@ function makeSkills() {
     "AutoHotKey" => "ahk.svg"
     );
 
-    $baseURL = 'img/icons/';
+    $baseURL = 'app/img/icons/';
 
     foreach ($skillLogos as $label => $filename)
     {
@@ -70,7 +70,7 @@ function makeProjects() {
     "Tom Vandergriff Tribute" => "https://codepen.io/alexanderwebdev/full/bRyqzE"
     );
 
-    $baseURL = 'img/projects/';
+    $baseURL = 'app/img/projects/';
 
     foreach ($projectImages as $label => $filename)
     {
@@ -81,7 +81,7 @@ function makeProjects() {
           <span>' .  $label .  '</span>' . '
           <p>' . $projectInfo[$label] . '</p>' . '
             <div class="btn-container-1">' . '
-            <a class="btn" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
+            <a class="btn" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="app/img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
           </div>' . '
         </div>' . '
       </li>';
@@ -102,7 +102,7 @@ function makeSocial() {
     "Email" => "mailto:alex@alex-crist.com"
     );
 
-    $baseURL = 'img/';
+    $baseURL = 'app/img/';
 
     foreach ($socialIcons as $label => $filename)
     {

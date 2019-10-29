@@ -239,6 +239,7 @@ nav.expanded #menu li a.icon {
   -webkit-box-pack:center;
   -ms-flex-pack:center;
   justify-content:center;
+  overflow-x:hidden;
 }
 #hero-area-row-3 p {
   font-size:0.9rem;
@@ -248,9 +249,10 @@ nav.expanded #menu li a.icon {
   padding:0 3rem;
 }
 #hero-area-row-3 img {
-  width:100vw;
+  width:4000px;
   position:relative;
-  top:4px;
+  -webkit-transform:translateX(-2000px) translateX(50vw);
+  transform:translateX(-2000px) translateX(50vw);
 }
 /* Projects */
 section#projects:target::before {
@@ -443,7 +445,8 @@ section#skills:target::before {
   width:220px;
   padding:0.75rem;
   margin:0.25rem;
-  border:2px solid #ac6b36;
+  border:2px solid #ffffff;
+  border-left:2px solid #ac6b36;
   border-radius:7px;
 }
 ::-webkit-input-placeholder {
