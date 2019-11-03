@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Alex Crist | Frontend Developer</title>
+  <title>Alex Crist | Frontend Web Developer</title>
   <meta name="author" content="Alex Crist">
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
@@ -38,14 +38,15 @@
   <div id="hero-area">
     <div id="hero-area-row-1">
       <img src="app/img/alex-crist-badge.png">
-      <a class="btn" href="Alex Crist's resume - Frontend Developer.pdf">My resume</a>
+      <a class="btn" href="app/img/Alex Crist - Resume for Web Development.pdf" target="_blank">My resume</a>
     </div>
     <div id="hero-area-row-2">
       <span id="title">Frontend Web Developer<br><span id="subtitle">and UI/UX Designer</span><br>
       <img src="app/img/divider-arrow-thin-sm.svg">
     </div> 
     <div id="hero-area-row-3">
-      <p>My portfolio of development and design is hand-coded in plain HTML, CSS, PHP, and JavaScript. It has been built using mobile-first theory and includes a responsive layout. For cross-browser compatibility, I use Autoprefixer via the Gulp task runner.</p>
+      <p>This website is my work portfolio.It is craftfully hand-coded in plain HTML, CSS, PHP, and JavaScript. It represents my competency and fluency in programming languages.</p>
+      <p>I chose to build my website as a showcase and as a creative outlet. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and designed with you, the user, in mind.</p>
       <img src="app/img/divider-arrow-wings-4000px.svg">
     </div>
     
