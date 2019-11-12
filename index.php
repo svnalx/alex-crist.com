@@ -12,7 +12,7 @@
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
   
   <link rel="stylesheet" href="dist/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   
 </head>
 <body>
@@ -23,7 +23,7 @@
     <?php makeSocial(); ?>
   </ul>
   <ul id="menu">
-    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i class="fa fa-bars"></i></a></li>
+    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i id="menu-toggle-btn" class="fas fa-bars"></i></a></li>
     <li><a href="#hero">BEGIN</a></li>
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#about">ABOUT</a></li>
@@ -45,8 +45,8 @@
       <img src="app/img/divider-arrow-thin-sm.svg">
     </div> 
     <div id="hero-area-row-3">
-      <p>This website is my work portfolio.It is craftfully hand-coded in plain HTML, CSS, PHP, and JavaScript. It represents my competency and fluency in programming languages.</p>
-      <p>I chose to build my website as a showcase and as a creative outlet. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and designed with you, the user, in mind.</p>
+      <p>Hello! Welcome to my website which is meticulously hand-coded in plain HTML, CSS, PHP, and JavaScript. It serves to represent my competency and fluency in programming for the web.</p>
+      <p>I chose to build my website as both a showcase of my work and as a creative outlet for expression. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and designed with you - the user - in mind.</p>
       <img src="app/img/divider-arrow-wings-4000px.svg">
     </div>
     
@@ -83,7 +83,13 @@
 
   <br><h1>Contact me</h1>
 
-  <?php require_once('contact-form.php'); ?>
+  <form id="contact" action="process-contact-form.php" method="post">
+    <input type="text" name="name" placeholder="Your name"><br>
+    <input type="email" name="email" placeholder="Your email"><br>
+    <textarea name="message" rows="6" placeholder="Message..."></textarea><br><br>
+    <input type="hidden" name="process">
+    <button type="submit" class="btn" form="contact" value="Send it">Send it</button>
+  </form>
 
 <?php require_once('roll-credits.php'); ?>
 
@@ -91,10 +97,14 @@
 <script>
 function toggleTopNav() {
   var x = document.getElementById("top-nav");
+  var y = document.getElementById("menu-toggle-btn");
+
   if (x.className === "topnav") {
     x.className += " expanded";
+    y.className = "fas fa-times-circle"
   } else {
     x.className = "topnav";
+    y.className = "fas fa-bars"
   }
 }
 </script>

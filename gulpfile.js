@@ -1,7 +1,7 @@
 const { watch, src, dest } = require('gulp');
 const livereload = require('gulp-livereload');
 const autoprefixer = require('gulp-autoprefixer');
-var srcCss = [
+const cssSrc = [
   "app/css/styles.css",
   "app/css/fonts.css",
   "app/css/base.css",
@@ -14,11 +14,11 @@ var srcCss = [
 
 exports.default = function() {
   livereload.listen();
-  watch('app/css/*.css', { events: 'all' }, apf);
+  watch('app/css/*.css', { events: 'all' }, autoprefix);
 };
 
-function apf() {
-  return src(srcCss)
+function autoprefix() {
+  return src(cssSrc)
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false

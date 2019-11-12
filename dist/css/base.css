@@ -34,6 +34,8 @@ ul {
   border-bottom:1px solid #a14c3b;
 }
 .btn {
+  font-size:0.8rem;
+  font-weight:bold;
   background-color:transparent;
   border-radius:3px;
   padding:0 1rem 0 0;
@@ -120,7 +122,7 @@ nav #menu {
   padding:0;
   list-style:none;
   overflow:hidden;
-  width:100vw;
+  width:20vw;
   position:relative;
   top:0;
   right:0;
@@ -137,7 +139,7 @@ nav #menu li:first-child {
   display:block;
   background-color:transparent;
 }
-i.fa-bars {
+#menu-toggle-btn {
   font-size:35px;
   color:#f0f0f0;
 }
@@ -147,9 +149,11 @@ nav #menu a {
   font-weight:bold;
   text-decoration:none;
   text-transform:uppercase;
+  text-align:left;
 }
 nav #menu .icon {
   display:block;
+  text-align:right;
 }
 nav.expanded #menu {
   position:absolute;
@@ -211,8 +215,6 @@ nav.expanded #menu li a.icon {
     justify-content:space-around;
 }
 #hero-area-row-1 .btn {
-  font-size:0.8rem;
-  font-weight:bold;
   background-color:#0d122d;
   -webkit-box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
   box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);

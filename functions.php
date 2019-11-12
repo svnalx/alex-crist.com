@@ -90,8 +90,8 @@ function makeProjects() {
 function makeSocial() {
     $socialIcons = array(
     "Github" => "github.svg",
-    "CodePen" => "codepen.svg",
     "LinkedIn" => "linkedin.svg",
+    "CodePen" => "codepen.svg",
     "Email" => "email.svg"
     );
     

@@ -34,6 +34,8 @@ ul {
   border-bottom:1px solid #a14c3b;
 }
 .btn {
+  font-size:0.8rem;
+  font-weight:bold;
   background-color:transparent;
   border-radius:3px;
   padding:0 1rem 0 0;
@@ -99,7 +101,7 @@ nav #menu {
   padding:0;
   list-style:none;
   overflow:hidden;
-  width:100vw;
+  width:20vw;
   position:relative;
   top:0;
   right:0;
@@ -116,7 +118,7 @@ nav #menu li:first-child {
   display:block;
   background-color:transparent;
 }
-i.fa-bars {
+#menu-toggle-btn {
   font-size:35px;
   color:#f0f0f0;
 }
@@ -126,9 +128,11 @@ nav #menu a {
   font-weight:bold;
   text-decoration:none;
   text-transform:uppercase;
+  text-align:left;
 }
 nav #menu .icon {
   display:block;
+  text-align:right;
 }
 nav.expanded #menu {
   position:absolute;
@@ -171,8 +175,6 @@ nav.expanded #menu li a.icon {
     justify-content:space-around;
 }
 #hero-area-row-1 .btn {
-  font-size:0.8rem;
-  font-weight:bold;
   background-color:#0d122d;
   box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
   padding:0.75rem 1rem;
@@ -227,18 +229,9 @@ section#projects:target::before {
 }
 #projects {
   background-color:#f0f0f0;
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-flow:column wrap;
   flex-flow:column wrap;
-  -webkit-box-pack:center;
-  -ms-flex-pack:center;
   justify-content:center;
-  -webkit-box-align:center;
-  -ms-flex-align:center;
   align-items:center;
   padding:200px auto;
 }    
@@ -246,14 +239,8 @@ section#projects:target::before {
   list-style:none;
   padding:0;
   width:300px;
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:normal;
-  -ms-flex-flow:row wrap;
   flex-flow:row wrap;
-  -ms-flex-pack:distribute;
   justify-content:space-around;
 }
 #projects ul li {
@@ -263,10 +250,6 @@ section#projects:target::before {
   width:300px;
   height:515px;
   padding-bottom:0rem;
-  -webkit-box-shadow:
-  0 3px 4px -3px rgba(1, 8, 41, 0.2), 
-  0 3px 4px rgba(1, 8, 41, 0.1), 
-  0 2px 4px rgba(1, 8, 41, 0.1);
   box-shadow:
   0 3px 4px -3px rgba(1, 8, 41, 0.2), 
   0 3px 4px rgba(1, 8, 41, 0.1), 
@@ -296,38 +279,19 @@ section#about:target::before {
   height:50px;
 }
 #about {
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-flow:column wrap;
   flex-flow:column wrap;
-  -webkit-box-pack:center;
-  -ms-flex-pack:center;
   justify-content:center;
-  -webkit-box-align:center;
-  -ms-flex-align:center;
   align-items:center;
-  -ms-flex-line-pack:center;
   align-content:center;
   padding:1rem 5vw 1rem 5vw;
   background-color:#f0f0f0;
 }
 #about-text {
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-    -ms-flex-flow:row wrap;
     flex-flow:row wrap;
-    -webkit-box-align:start;
-    -ms-flex-align:start;
     align-items:flex-start;
-    -ms-flex-line-pack:center;
     align-content:center;
-    -ms-flex-pack:distribute;
     justify-content:space-around;
   width:90vw;
 }
@@ -346,17 +310,9 @@ section#skills:target::before {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-flow:column wrap;
   flex-flow:column wrap;
-  -webkit-box-pack:center;
-  -ms-flex-pack:center;
   justify-content:center;
-  -webkit-box-align:center;
-  -ms-flex-align:center;
   align-items:center;
-  -ms-flex-line-pack:center;
   align-content:center;
 }
 #skills ul {
@@ -371,10 +327,6 @@ section#skills:target::before {
   margin:0 10px 10px 0;
   width:90px;
   padding-bottom:0rem;
-  -webkit-box-shadow:
-  0 3px 4px -3px rgba(0, 0, 0, 0.2), 
-  0 3px 4px rgba(0, 0, 0, 0.1), 
-  0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow:
   0 3px 4px -3px rgba(0, 0, 0, 0.2), 
   0 3px 4px rgba(0, 0, 0, 0.1), 
@@ -414,24 +366,11 @@ section#skills:target::before {
   border-left:2px solid #ac6b36;
   border-radius:7px;
 }
-::-webkit-input-placeholder {
-  color:#5d5a55;
-}
-::-moz-placeholder {
-  color:#5d5a55;
-}
-:-ms-input-placeholder {
-  color:#5d5a55;
-}
-::-ms-input-placeholder {
-  color:#5d5a55;
-}
 ::placeholder {
   color:#5d5a55;
 }
 #contact .btn {
   background-color:#a14c3b;
-  -webkit-box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
   box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
   padding:0.5rem 0.75rem;
 }
