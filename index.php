@@ -11,6 +11,9 @@
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
   
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900&display=swap');
+</style>
   <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   
@@ -45,8 +48,8 @@
       <img src="app/img/divider-arrow-thin-sm.svg">
     </div> 
     <div id="hero-area-row-3">
-      <p>Hello! Welcome to my website which is meticulously hand-coded in plain HTML, CSS, PHP, and JavaScript. It serves to represent my competency and fluency in programming for the web.</p>
-      <p>I chose to build my website as both a showcase of my work and as a creative outlet for expression. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and designed with you - the user - in mind.</p>
+      <p>Hello! My name is Alex and this is my website. It's hand-coded in plain HTML, CSS, PHP, and JavaScript serves to represent my competency and fluency in programming for the web.</p>
+      <p>I chose to build my website as both a showcase of my work and as a creative outlet for expression. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and being constantly updated.</p>
       <img src="app/img/divider-arrow-wings-4000px.svg">
     </div>
     
