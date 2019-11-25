@@ -8,6 +8,10 @@ require 'vendor/autoload.php';
 
 $pw = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . '/../pw.ini');
 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$msg = $_POST['message'];
+
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -23,20 +27,16 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('visitor@portfolio.com');
+    $mail->setFrom('new.visitor@alex-crist.com');
     $mail->addAddress('alex@alex-crist.com');     // Add a recipient
 
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = $msg;
+    $mail->Body    = $name . $msg;
 
-    //$mail->send();
-    $homeDir= chop($_SERVER['REQUEST_URI'], "process-contact-form.php");
-    echo "Message that will display when form works.";
-    echo "Click here to go back to my portfolio.";
+    $mail->send();
     //header("Location: " . $homeDir . "#contact");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

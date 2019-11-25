@@ -1,0 +1,37 @@
+/* Footer */
+#footer {
+    background-color:#f0f0f0;
+    text-align:center;
+    padding:0;
+  }
+  #footer p {
+    font-size:1.4rem;
+    color:#f0f0f0;
+  }
+  #contact {
+    padding:0 0 2rem 0;
+  }
+  #contact input, #contact textarea {
+    width:220px;
+    padding:0.75rem;
+    margin:0.25rem;
+    border:2px solid #ffffff;
+    border-left:2px solid #ac6b36;
+    border-radius:7px;
+  }
+  ::placeholder {
+    color:#5d5a55;
+  }
+  #contact .btn {
+    background-color:#a14c3b;
+    box-shadow: 3px 3px 0px 0px rgba(0,2,12,1);
+    padding:0.5rem 0.75rem;
+  }
+  #bottom-row {
+    background-color:#00020c;
+    padding:0.25rem;
+  }
+  #bottom-row p {
+    font-size:0.9rem;
+    color:#f0f0f0;
+  }

@@ -1,0 +1,82 @@
+/* Nav */
+nav {
+    background-color:$purple1;
+    text-align:right;
+    display:flex;
+    flex-flow:row wrap;
+    position:sticky;
+    top:0;
+    z-index:100;
+    #social {
+      flex:4;
+      list-style:none;
+      padding:3px;
+      position:relative;
+      top:0;
+      left:0;
+      text-align:left;
+      z-index:101;
+      height:48px;
+      li {
+        display:inline-block;
+        margin:5px 7px 5px 5px;
+        span {
+          text-decoration:none;
+          color:#f0f0f0;
+          font-size:1.25rem;
+          width:35px;
+          margin:0;
+          padding:0;
+        }
+        img {
+          width:35px;
+        }
+      }
+    }
+  }
+  #menu {
+    background-color:$purple2;
+    flex:1;
+    padding:0;
+    list-style:none;
+    overflow:hidden;
+    width:100vw;
+    position:absolute;
+    top:50px;
+    right:0;
+    z-index:102;
+    li {
+      display:none;
+      padding:8px;
+      text-decoration:none;
+      margin:0;
+    }
+    a {
+      color:$green1;
+      font-family:"Poppins";
+      font-size:36px;
+      font-weight:900;
+      text-decoration:none;
+      text-transform:uppercase;
+      text-align:right;
+    }
+    .icon {
+      display:block;
+      text-align:right;
+    }
+  }
+  #menu-toggle-btn {
+    font-size:35px;
+    color:#f0f0f0;
+  }
+  #menu.menu-open {
+    li {
+      display:block;
+    }
+    li a {
+      display:block;
+    }
+    li a.icon {
+      display:block;
+    }
+  }

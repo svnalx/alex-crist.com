@@ -10,56 +10,58 @@
   <meta name="author" content="Alex Crist">
   <meta name="description" content="Web Developer in Arlington, Texas">
   <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
-  
+
   <style>
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900&display=swap');
-</style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:700,800,900|Roboto:100,300,400,500&display=swap');
+  </style>
+
   <link rel="stylesheet" href="dist/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   
 </head>
 <body>
 
-<nav class="topnav" id="top-nav">
+<nav>
 
   <ul id="social">
     <?php makeSocial(); ?>
   </ul>
-  <ul id="menu">
-    <li><a href="javascript:void(0);" class="icon" onclick="toggleTopNav()"><i id="menu-toggle-btn" class="fas fa-bars"></i></a></li>
+
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i id="menu-toggle-btn" class="fas fa-bars"></i></a>
+
+  <ul id="menu" class="menu-closed">
     <li><a href="#hero">BEGIN</a></li>
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#skills">SKILLS</a></li>
     <li><a href="#contact">CONTACT</a></li>
   </ul>
-
+  
 </nav>
 
 <section id="hero">
 
   <div id="hero-area">
     <div id="hero-area-row-1">
-      <img src="app/img/alex-crist-badge.png">
-      <a class="btn" href="app/img/Alex Crist - Resume for Web Development.pdf" target="_blank">My resume</a>
+      <img src="app/img/Alex-Crist-logo.svg">
     </div>
     <div id="hero-area-row-2">
-      <span id="title">Frontend Web Developer<br><span id="subtitle">and UI/UX Designer</span><br>
-      <img src="app/img/divider-arrow-thin-sm.svg">
-    </div> 
-    <div id="hero-area-row-3">
-      <p>Hello! My name is Alex and this is my website. It's hand-coded in plain HTML, CSS, PHP, and JavaScript serves to represent my competency and fluency in programming for the web.</p>
-      <p>I chose to build my website as both a showcase of my work and as a creative outlet for expression. It's responsive (try it out), cross-browser compatible (I use Autoprefixer for Gulp), and being constantly updated.</p>
-      <img src="app/img/divider-arrow-wings-4000px.svg">
-    </div>
-    
+      <div class="card-rounded-with-shadow">
+        <h1>Hello</h1><br><br>
+        <span class="highlighted">&nbsp;I'm <span class="poppins700">Alex Crist</span>, a hybrid&nbsp;<br>
+        &nbsp;Front-End <span class="poppins700">Developer&nbsp;</span> <span class="ampersand"><br>&nbsp;&&nbsp;</span>UI/UX <span class="poppins700">Designer&nbsp;</span><br>
+        &nbsp;continuously studying my craft.&nbsp;</span><br><br><br>
+        <a class="btn-primary" href="app/img/Alex Crist - Resume for Web Development.pdf" target="_blank">Download resume</a>
+        <br><br><br>
+      </div>
+    </div>     
   </div>
 
 </section>
 
 <section id="projects">
 
-  <h1>Explore my work</h1>
+  <h2>Some of my work</h2>
   <ul><?php makeProjects(); ?></ul>
 
 </section>
@@ -98,15 +100,15 @@
 
 </footer>
 <script>
-function toggleTopNav() {
-  var x = document.getElementById("top-nav");
+function toggleMenu() {
+  var x = document.getElementById("menu");
   var y = document.getElementById("menu-toggle-btn");
 
-  if (x.className === "topnav") {
-    x.className += " expanded";
+  if (x.className === "menu-closed") {
+    x.className = "menu-open";
     y.className = "fas fa-times-circle"
   } else {
-    x.className = "topnav";
+    x.className = "menu-closed";
     y.className = "fas fa-bars"
   }
 }

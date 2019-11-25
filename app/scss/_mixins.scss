@@ -1,0 +1,41 @@
+/* Mixins */
+@mixin card-rounded-with-shadow {
+    background-color:$white;
+    border-radius:$corner-rounded;
+    box-shadow:
+    0 3px 4px -3px rgba(1, 8, 41, 0.2), 
+    0 3px 4px rgba(1, 8, 41, 0.1), 
+    0 2px 4px rgba(1, 8, 41, 0.1);
+  }
+@mixin poppins700 {
+  font-family:"Poppins", sans-serif;
+  font-weight:700;
+}
+@mixin poppins900 {
+  font-family:"Poppins", sans-serif;
+  font-weight:900;
+}
+@mixin roboto100 {
+  font-family:"Roboto", sans-serif;
+  font-weight:100;
+}
+@mixin roboto300 {
+  font-family:"Roboto", sans-serif;
+  font-weight:300;
+}
+@mixin roboto400 {
+  font-family:"Roboto", sans-serif;
+  font-weight:400;
+}
+@mixin roboto500 {
+  font-family:"Roboto", sans-serif;
+  font-weight:500;
+}
+@mixin btn-base {
+  @include roboto500;
+  font-size:14px;
+  text-decoration:none;
+  text-transform:uppercase;
+  border-radius:3px;
+  box-sizing:border-box;
+}

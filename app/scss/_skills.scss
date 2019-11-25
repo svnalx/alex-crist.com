@@ -1,0 +1,46 @@
+/* Skills */
+section#skills:target::before {
+    content:"";
+    display:block;
+    height:50px;
+  }
+  #skills {
+    background-color:#f0f0f0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+  #skills ul {
+    list-style:none;
+    padding:0;
+    width:290px;
+    justify-self:center;
+  }
+  #skills ul li {
+    display:inline-block;
+    background-color:#fff;
+    margin:0 10px 10px 0;
+    width:90px;
+    padding-bottom:0rem;
+    box-shadow:
+    0 3px 4px -3px rgba(0, 0, 0, 0.2), 
+    0 3px 4px rgba(0, 0, 0, 0.1), 
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #skills ul li:nth-child(3n+3) {
+    margin-right:0;
+  }
+  #skills ul li span {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    font:500 0.9rem/1rem "Segoe UI", Verdana, sans-serif;
+    padding:0.5rem 0;
+  }
+  #skills ul li img {
+    width:90px;
+  }

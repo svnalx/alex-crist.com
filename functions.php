@@ -53,7 +53,7 @@ function makeProjects() {
     => "Veteran-owned business that needed a modern website. I designed the logo and website and developed it by creating a custom Wordpress child theme.",
     
     "Clearfork Bamboo Rods" 
-    => "Bamboo flyrod craftsman who was just beginning his business. The logo, website design, and Wordpress development were done exclusively by me.",
+    => "&#8226; Wordpress &#8226; Custom theme <br>&#8226; Logo &#8226; Branding",
     
     "Fancy That" 
     => "Local retailer specializing in gifts and furniture. I designed their logo and built this website with Bootstrap for a responsive layout.",
@@ -64,8 +64,8 @@ function makeProjects() {
     );
     
     $projectURLs = array(
-    "Allegiance Group Construction" => "https://allegiance-grp.com",
     "Clearfork Bamboo Rods" => "https://clearforkrods.com",
+    "Allegiance Group Construction" => "https://allegiance-grp.com",
     "Fancy That" => "https://fancythatagain.com",
     "Tom Vandergriff Tribute" => "https://codepen.io/alexanderwebdev/full/bRyqzE"
     );
@@ -80,8 +80,8 @@ function makeProjects() {
         <div id="project-info">' . '
           <span>' .  $label .  '</span>' . '
           <p>' . $projectInfo[$label] . '</p>' . '
-            <div class="btn-container-1">' . '
-            <a class="btn" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="app/img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
+            <div>' . '
+            <a class="btn-secondary" href="' . $projectURLs[$label] . '" target="_blank">'. '<img src="app/img/view-icon.svg" alt="view site">VIEW SITE</a>' . '
           </div>' . '
         </div>' . '
       </li>';
@@ -91,7 +91,6 @@ function makeSocial() {
     $socialIcons = array(
     "Github" => "github.svg",
     "LinkedIn" => "linkedin.svg",
-    "CodePen" => "codepen.svg",
     "Email" => "email.svg"
     );
     
