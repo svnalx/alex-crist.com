@@ -1,0 +1,17 @@
+  /* Projects */
+  #projects {
+    padding-top: 1rem; }
+  
+  #projects ul {
+    width: 630px; }
+  
+  /* Skills */
+  #skills ul {
+    width: 490px; }
+  
+  #skills ul li:nth-child(4n+4) {
+    /* resets margin from base.css */
+    margin-right: 10px; }
+  
+  #skills ul li:nth-child(5n+5) {
+    margin-right: 0; }

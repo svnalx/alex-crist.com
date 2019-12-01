@@ -1,14 +1,3 @@
-/* Hero SCSS */
-#hero-area-row-1 {
-  width: 500px; }
-
-#hero-area-row-2 img {
-  max-width: 30vw; }
-
-#hero-area-row-3 p {
-  width: 600px;
-  padding: 0 15px; }
-
 /* Projects */
 #projects {
   padding-top: 1rem; }

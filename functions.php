@@ -1,4 +1,7 @@
 <?php
+define("SITE", "https://alex-crist.com");
+define("LOCAL", "http://localhost/alex-crist/vanilla");
+
 function makeSkills() {
     $skillLogos = array(
     "HTML 5" => "html5.svg",
@@ -42,24 +45,24 @@ function makeSkills() {
 }
 function makeProjects() {
     $projectImages = array(
-    "Allegiance Group Construction" => "allegiance-screenshot-faded.png",
     "Clearfork Bamboo Rods" => "clearfork-screenshot-faded.png",
+    "Allegiance Group Construction" => "allegiance-screenshot-faded.png",
     "Fancy That" => "fancythat-screenshot-faded.png",
     "Tom Vandergriff Tribute" => "vandergriff-faded.png"
     );
     
     $projectInfo = array(
-    "Allegiance Group Construction" 
-    => "Veteran-owned business that needed a modern website. I designed the logo and website and developed it by creating a custom Wordpress child theme.",
-    
     "Clearfork Bamboo Rods" 
     => "&#8226; Wordpress &#8226; Custom theme <br>&#8226; Logo &#8226; Branding",
-    
+
+    "Allegiance Group Construction" 
+    => "&#8226; Wordpress &#8226; Custom theme <br>&#8226; Logo &#8226; Branding",
+        
     "Fancy That" 
-    => "Local retailer specializing in gifts and furniture. I designed their logo and built this website with Bootstrap for a responsive layout.",
+    => "&#8226; Bootstrap &#8226; Logo &#8226; Branding",
     
     "Tom Vandergriff Tribute"
-    => "Tom Vandergriff Tribute Page"
+    => "&#8226; Bootstrap &#8226; jQuery"
     
     );
     
@@ -90,8 +93,7 @@ function makeProjects() {
 function makeSocial() {
     $socialIcons = array(
     "Github" => "github.svg",
-    "LinkedIn" => "linkedin.svg",
-    "Email" => "email.svg"
+    "LinkedIn" => "linkedin.svg"
     );
     
     $socialURLs = array(
@@ -109,5 +111,7 @@ function makeSocial() {
       '<li>' . '
       <a href="' . $socialURLs[$label] . '" target="_blank"><img src="' . $baseURL . $filename . '" alt="Icon for ' .  $label . '" /></a></li>';
     }
+
+    //echo '<li id="alex-crist">ALEX CRIST</li>';
 }
 ?> 

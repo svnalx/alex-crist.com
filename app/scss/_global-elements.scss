@@ -1,45 +1,50 @@
 /* Global elements */
 html {
     font-family: "Roboto", Helvetica, sans-serif;
+    font-size:10px;
     color:$purple1;
   }
   body {
     background-color:$lite-grey;
   }
+  section {
+    border-top:1px solid $purple3;
+  }
   h1 {
     @include poppins900;
     font-size:36px;
     color:$purple1;
-    margin-top:14px;
-    -ms-flex-item-align:center;
     align-self:center;
     text-align:center;
+    margin:0;
   }
   h2 {
     @include poppins900;
     font-size:30px;
-    color:$purple2;
-    margin-top:14px;
-    -ms-flex-item-align:center;
+    color:$purple1;
     align-self:center;
     text-align:center;
+    padding-top:14px;
+    margin:0;
   }
   h3 {
-    font-family:"Poppins", sans-serif;
-    font-size:1rem;
-    font-weight:800;
+    @include poppins700;
+    font-size:16px;
+    padding:0 10vw;
+    color:$purple4;
+    align-self:center;
     text-align:center;
-    margin-top:0;
-    color:#f0f0f0; 
+    margin:0;
+    margin-bottom:10px;
+    max-width:500px;
   }
   ul {
     margin:0;
   }
-  .body-text-link {
-    color:#a14c3b;
-    text-decoration:none;
-    font-weight:bold;
-    border-bottom:1px solid #a14c3b;
+  button {
+    background:none;
+    border:0;
+    padding:0;
   }
   .btn-primary {
     @include btn-base;
@@ -51,11 +56,23 @@ html {
     @include btn-base;
     background-color:$white;
     color:$green1;
-    box-shadow:0 0 0 2px $green1 inset;
+    border:2px solid $green1;
     padding-right:16px;
     img {
-      height:45px;
-      padding:0;
-      padding-right:1rem;
+      height:35px;
+      padding:0px;
+      padding-right:16px;
     }
   }
+section#projects:target::before,
+section#about:target::before,
+section#skills:target::before   {
+  content:"";
+  display:block;
+  height:35px;
+}
+section#hero:target::before   {
+  content:"";
+  display:block;
+  height:0px;
+}

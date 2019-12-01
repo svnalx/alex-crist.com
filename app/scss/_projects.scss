@@ -1,9 +1,4 @@
 /* Projects */
-section#projects:target::before {
-    content:"";
-    display:block;
-    height:50px;
-  }
 #projects {
   display:flex;
   flex-flow:column wrap;
@@ -22,8 +17,12 @@ section#projects:target::before {
       display:inline-block;
       margin:0rem 0rem 1.75rem 0rem;
       width:300px;
-      height:515px;
+      height:450px;
       padding-bottom:0rem;
+      > img {
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+      }
       span {
         @include poppins900;
         color:$purple1;
@@ -41,10 +40,9 @@ section#projects:target::before {
   padding:0 0.75rem;
   p {
     @include roboto400;
-    font-size:14px;
-    line-height:1.25rem;
+    font-size:1.4rem;
+    line-height:1.8rem;
     text-align:justify;
-    height:100px;
     margin-top:0;
   }
   div {

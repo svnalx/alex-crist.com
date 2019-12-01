@@ -23,18 +23,22 @@
 
 <nav>
 
-  <ul id="social">
-    <?php makeSocial(); ?>
-  </ul>
+  <div id="top">
 
-  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i id="menu-toggle-btn" class="fas fa-bars"></i></a>
+    <ul id="social">
+      <?php makeSocial(); ?>
+    </ul>
+
+    <a href="javascript:void(0);" id="menu-toggle-btn" onclick="toggleMenu()"><i id="menu-toggle-icon" class="fas fa-bars"></i></a>
+
+  </div>
 
   <ul id="menu" class="menu-closed">
-    <li><a href="#hero">BEGIN</a></li>
-    <li><a href="#projects">PROJECTS</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#skills">SKILLS</a></li>
-    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#hero" onclick="toggleMenu()">START</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
+    <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+    <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
   </ul>
   
 </nav>
@@ -61,48 +65,65 @@
 
 <section id="projects">
 
-  <h2>Some of my work</h2>
+  <h2>Projects</h2><h3>A collection of my work</h3>
   <ul><?php makeProjects(); ?></ul>
 
 </section>
   
 <section id="about">
 
-  <h1>Get to know me</h1>
+  <h2>About Alex</h2><h3>Or, why I stay up late coding</h3>
   <div id="about-text">
-    <p>Hi, I’m Alex and you have arrived at my web development portfolio. Here, you can see samples of my capabilities. I plan to grow this site as my skills grow. <a class="body-text-link" href="#contact">Also, I’m available to hire!</a> I’m eager to meet you.</p>
-    <p>I chose to become a developer so that I can build things that make peoples’ lives better while also building my dream career. My enthusiasm for programming started early - I was writing games on my graphing calculator in middle school. Now I am looking to put my knowledge and experience to work creating beautiful, functional websites using industry best practices.</p>
-    <p></p>
+
+    <p>Programming and design are two core components of who I am. I chose to become a developer so that I can use my acquired skills to build beautiful, functional apps that move people.</p>
+
+    <p>In the early days, I was programming games on my graphing calculator in middle school. I experimented with Visual Basic and C++, then I discovered HTML and CSS. The ability to quickly re-arrange the UI on a whim was a defining reason for choosing these languages.</p>
+
+    <p class="img-in-text"><a href="app/img/Seat-of-Pantheon.jpg"><img src="app/img/Seat-of-Pantheon.jpg"></a><span class="img-subtext">My custom interface in World of Warcraft.</span></p>
+
+    <p>This website is the child of my love for learning and improving. It's hand coded in plain HTML, CSS/SCSS, PHP, and JavaScript. For cross-browser compatibility I use Autoprefixer for the Gulp taskrunner. It was designed using atomic design theory and mobile first theory.</p>
+
+    <p><a id="available-hire" href="#contact">I am available for hire.</a></p>
+
   </div>
   
 </section>
 
 <section id="skills">
 
-  <h1>Tools</span> of creation</h1>
+  <h2>Skills</h2><h3>Tools of creation</h3>
   <ul><?php makeSkills(); ?></ul>
 
 </section>
 
-<footer id="footer">
+<section id="contact">
 
-  <br><h1>Contact me</h1>
+  <br><h2>Contact</h2><h3>Send me a message.</h3>
 
-  <form id="contact" action="process-contact-form.php" method="post">
+  <?php 
+  if (isset($_POST['process2'])) {
+    echo "true";
+  }
+  ?>
+
+  <form id="contact-form" action="process-contact-form.php" method="post">
     <input type="text" name="name" placeholder="Your name"><br>
     <input type="email" name="email" placeholder="Your email"><br>
     <textarea name="message" rows="6" placeholder="Message..."></textarea><br><br>
     <input type="hidden" name="process">
-    <button type="submit" class="btn" form="contact" value="Send it">Send it</button>
+    <button type="submit" class="btn-primary" form="contact-form" value="Send it">Send it</button>
   </form>
 
-<?php require_once('roll-credits.php'); ?>
+</section>
 
+<footer id="footer">
+  <?php require_once('roll-credits.php'); ?>
 </footer>
+
 <script>
 function toggleMenu() {
   var x = document.getElementById("menu");
-  var y = document.getElementById("menu-toggle-btn");
+  var y = document.getElementById("menu-toggle-icon");
 
   if (x.className === "menu-closed") {
     x.className = "menu-open";

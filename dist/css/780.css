@@ -1,0 +1,23 @@
+/* Nav */
+nav #menu {
+  position: absolute;
+  width: 75vw; }
+
+nav #menu li {
+  display: inline-block;
+  margin: 10px; }
+
+nav #menu li:first-child {
+  display: none; }
+
+nav #menu li a {
+  display: block; }
+
+nav #menu li a.icon {
+  display: block; }
+
+/* Hero */
+#hero-area-row-2 img {
+  width: 200px; }
+
+/* About */

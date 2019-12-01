@@ -4,9 +4,9 @@
   }
   #hero-area {
     display:flex;
-      flex-flow:row wrap;
+      flex-flow:column;
       align-items:center;
-      align-content:flex-end;
+      align-content:center;
       justify-content:center;
     position:relative;
       width:100%;
@@ -28,7 +28,7 @@
   #hero-area-row-2 {
     text-align:center;
     width:90vw;
-    font-family:"Abeezee", sans-serif;
+    max-width:300px;
     padding:1rem 0 0.5rem 0;
     color:#f0f0f0;
     .card-rounded-with-shadow {

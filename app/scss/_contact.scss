@@ -1,0 +1,24 @@
+/* Contact */
+#contact {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:center;
+}
+#contact-form {
+  @include card-rounded-with-shadow;
+  padding:20px;
+  font-size:1.4rem;
+  text-align:center;
+  margin-bottom:40px;
+  input, textarea {
+    width:220px;
+    padding:10px;
+    margin:3px;
+    border:1px solid $purple3;
+    border-radius:7px;
+  }
+}
+::placeholder {
+  color:#5d5a55;
+}

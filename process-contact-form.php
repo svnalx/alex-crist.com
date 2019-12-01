@@ -11,6 +11,7 @@ $pw = parse_ini_file($_SERVER['DOCUMENT_ROOT'] . '/../pw.ini');
 $name = $_POST['name'];
 $email = $_POST['email'];
 $msg = $_POST['message'];
+$_POST['process2'] = true;
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -34,10 +35,10 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $msg;
-    $mail->Body    = $name . $msg;
+    $mail->Body    = $name . "<br>" . $email . "<br>" .  $msg;
 
     $mail->send();
-    //header("Location: " . $homeDir . "#contact");
+    header("Location: index.php#contact");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
