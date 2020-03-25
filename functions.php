@@ -97,8 +97,7 @@ function makeSocial() {
     );
     
     $socialURLs = array(
-    "Github" => "https://github.com/middlename-alexander",
-    "CodePen" => "https://codepen.io/alexanderwebdev",
+    "Github" => "https://github.com/svnalx",
     "LinkedIn" => "http://www.linkedin.com/in/AlexCristWebDeveloper",
     "Email" => "mailto:alex@alex-crist.com"
     );
