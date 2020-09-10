@@ -198,6 +198,10 @@ nav {
   align-content: flex-end;
   justify-content: space-around; }
 
+#hero-area-row-1 img {
+  width: 150px;
+  margin: auto; }
+
 #hero-area-row-1 .btn {
   background-color: #0d122d;
   box-shadow: 3px 3px 0px 0px white;
