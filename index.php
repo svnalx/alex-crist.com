@@ -3,22 +3,32 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Alex Crist | Frontend Web Developer</title>
-  <meta name="author" content="Alex Crist">
-  <meta name="description" content="Web Developer in Arlington, Texas">
-  <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150972537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:700,800,900|Roboto:100,300,400,500&display=swap');
-  </style>
+      gtag('config', 'UA-150972537-1');
+    </script>
 
-  <link rel="stylesheet" href="dist/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Crist">
+    <meta name="description" content="Web Developer in Arlington, Texas">
+    <meta name="keywords" content="html,css,php,mysql,javascript,jquery,illustrator,photoshop,ui/ux,front end,web developer,portfolio,alex crist">  
+
+    <title>Alex Crist | Frontend Web Developer</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:700,800,900|Roboto:100,300,400,500&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
+
 <body>
 
 <nav>
