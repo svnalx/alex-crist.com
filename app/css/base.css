@@ -445,3 +445,37 @@ section#skills:target::before {
 
 /* debug 
 * { box-sizing:border-box; border:1px dotted red; }*/
+
+
+/* Carson */
+#Carson main {
+  background-color:#000000;
+  width:100vw;
+  height:100vh;
+  padding:0;
+  margin:0;
+  position:absolute;
+  top:0;
+  left:0;
+  overflow:hidden;
+  text-align:center;
+}
+#Carson h1 {
+  color:#fafafa;
+  margin-top:20px;
+  font-size:1.75rem;
+}
+#Carson p {
+  color:#fafafa;
+  font-size:1.5rem;
+}
+#Carson main video {
+  width:100vw;
+  max-width:1080px;
+}
+#Carson .links-below-video {
+  color:#4EA346;
+  font-size:1.5rem;
+  position:relative;
+  top:20px;
+}
